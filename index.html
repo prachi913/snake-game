@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: rgb(19, 19, 11);
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+}
+.game-baord{
+    height: 90vmin;
+    width: 90vmin;
+    background:url("https://images.unsplash.com/photo-1524207874394-5ec7c8c8e1a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=535&q=80");
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
+}
+.score{
+    background-color: yellowgreen;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.snake{
+background-color: green;
+border: 2px solid black;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.head{
+    background-image:url("https://png.pngtree.com/png-vector/20210728/ourmid/pngtree-snake-head-cartoon-png-image_3733264.jpg");
+background-size: 100% 100%;
+}
+.food{
+    background-image: url("https://media.istockphoto.com/id/1312123713/vector/red-apple-with-green-leaf-icon-of-fruit-apple-cartoon-logo-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=0C6609oQhK1_SgxIN_TN9HIh7He4fbWvAL28v9dQqzM=");
+    background-size: 100% 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="score">score:<span id="score">0</span></h2>
+        
+    <div class="game-baord"> </div>
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>
